@@ -1,17 +1,17 @@
-![Titanic harbor](https://github.com/bluejurand/Titanic-python/blob/master/images/Titanic_harbor.jpg)  UPDATE
+![Elvis](https://github.com/bluejurand/Photos-colorization/blob/master/results/elvis.jpg)  
 # Photos colorization
 ![Build status](https://travis-ci.org/bluejurand/Titanic-python.svg?branch=master) UPDATE
 ![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg) 
 ![Python 3.6](https://img.shields.io/badge/python-3.3-blue.svg) 
-![Spyder 4.1.3](https://img.shields.io/badge/spyder-4.1.3-black)
+![Spyder 4.1.3](https://img.shields.io/badge/spyder-4.1.3-black) 
 ![Numpy 1.12.1](https://img.shields.io/badge/numpy-1.12.1-yellow.svg) 
 ![Matplotlib 2.1.2](https://img.shields.io/badge/matplotlib-2.1.2-blue.svg) 
-![Keras 2.3.1] (https://img.shields.io/badge/keras-2.3.1-red)
-![Tensorflow 2.1.0] (https://img.shields.io/badge/tensorflow-2.1.0-orange)
-![Scikit-image 0.16.2] (https://img.shields.io/badge/scikit--image-0.16.2-yellowgreen)
+![Keras 2.3.1] (https://img.shields.io/badge/keras-2.3.1-red) 
+![Tensorflow 2.1.0] (https://img.shields.io/badge/tensorflow-2.1.0-orange) 
+![Scikit-image 0.16.2] (https://img.shields.io/badge/scikit--image-0.16.2-yellowgreen)  
 Presented algorithm is able to colorize black-white photographies. Graph above shows model architecture. Code is implemented in keras API with tensorflow backend.  
-Resources which helped to establish this code are listed below, but the main one was deep colorization paper [1].
-The training was done on GPU unit.
+Resources which helped to establish this code are listed below, but the main one was deep colorization paper [1].  
+The training was done on GPU unit.  
 
 ## Motivation
 
@@ -77,14 +77,14 @@ __CNNs__
 
 __Transfer Learning__
 
-__NASnet__
+__NASnet__  
 https://arxiv.org/pdf/1707.07012.pdf
 
 __cuDNN__
   
-![Features importance](https://github.com/bluejurand/Titanic-python/blob/master/images/Features%20importance.png)
+![Model architecture]()
 
 ## Resources
 [1] Federico Baldassarre, Diego González Morin, Lucas Rodés-Guirao, *Deep Koalarization: Image Colorization using CNNs and Inception-Resnet-v2*,
-(https://arxiv.org/abs/1712.03400)
+(https://arxiv.org/abs/1712.03400)  
 [2]
