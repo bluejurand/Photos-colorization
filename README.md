@@ -90,15 +90,26 @@ __cuDNN__
 ![Model architecture](https://github.com/bluejurand/Photos-colorization/blob/master/model_architecture_xception.png)
 
 ## Results
+Below are presented in order from left to right:  
+- original image, which was an input to the algorithm;  
+- grayscale image, it is an luminance component, one of the outcomes to CIELab transformation;  
+- resut image, which is the output of the presented model.  
+Resulting images implemented on originaly color photographies:
 ![Image6](https://github.com/bluejurand/Photos-colorization/blob/master/results/image6.jpg)
 ![Image12](https://github.com/bluejurand/Photos-colorization/blob/master/results/image12.jpg)
 ![Image13](https://github.com/bluejurand/Photos-colorization/blob/master/results/image13.jpg)
 ![Image16](https://github.com/bluejurand/Photos-colorization/blob/master/results/image16.jpg) 
-
+Model implemented on black-white photographies:
 ![Image17](https://github.com/bluejurand/Photos-colorization/blob/master/results/image17.jpg)  
-![Image21](https://github.com/bluejurand/Photos-colorization/blob/master/results/image21.jpg)  
 ![Image26](https://github.com/bluejurand/Photos-colorization/blob/master/results/image26.jpg)  
-
+Implementation of algorithm to the historical photo:
+![Image21](https://github.com/bluejurand/Photos-colorization/blob/master/results/image21.jpg)  
+Couple of photographies which shows the drawbacks of the model. Colorized only part of the images,  
+leaving a large parts black and white. Mistakes in color sleection for some of the elements. 
+Resulting images are very often faded.
+![Image1](https://github.com/bluejurand/Photos-colorization/blob/master/results/image1.jpg)  
+![Image9](https://github.com/bluejurand/Photos-colorization/blob/master/results/image9.jpg)  
+![Image10](https://github.com/bluejurand/Photos-colorization/blob/master/results/image10.jpg)  
 ## Summary  
 
 
