@@ -90,10 +90,10 @@ __cuDNN__
 ![Model architecture](https://github.com/bluejurand/Photos-colorization/blob/master/model_architecture_xception.png)
 
 ## Results
-![Image6](https://github.com/bluejurand/Photos-colorization/blob/master/results/image6.jpg)    
-![Image12](https://github.com/bluejurand/Photos-colorization/blob/master/results/image12.jpg)  
-![Image13](https://github.com/bluejurand/Photos-colorization/blob/master/results/image13.jpg)  
-![Image16](https://github.com/bluejurand/Photos-colorization/blob/master/results/image16.jpg)  
+![Image6](https://github.com/bluejurand/Photos-colorization/blob/master/results/image6.jpg) 
+![Image12](https://github.com/bluejurand/Photos-colorization/blob/master/results/image12.jpg) 
+![Image13](https://github.com/bluejurand/Photos-colorization/blob/master/results/image13.jpg) 
+![Image16](https://github.com/bluejurand/Photos-colorization/blob/master/results/image16.jpg) 
 
 ![Image17](https://github.com/bluejurand/Photos-colorization/blob/master/results/image17.jpg)  
 ![Image21](https://github.com/bluejurand/Photos-colorization/blob/master/results/image21.jpg)  
