@@ -81,7 +81,7 @@ https://arxiv.org/pdf/1610.02357.pdf
 
 __cuDNN__
   
-![Model architecture]()
+![Model architecture](https://github.com/bluejurand/Photos-colorization/blob/master/model_architecture_xception.png)
 
 ## Resources
 [1] Federico Baldassarre, Diego González Morin, Lucas Rodés-Guirao, *Deep Koalarization: Image Colorization using CNNs and Inception-Resnet-v2*,
