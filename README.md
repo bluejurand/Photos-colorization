@@ -33,6 +33,11 @@ Exemplary commands to install python libraries:
 	pip install pandas  
 	pip install xgboost  
 	pip install seaborn 
+
+__Running code__  
+Everything is executed from file main.py. Go to directory where code is downoladed and run a command: 
+
+	py main.py
 	
 ## Code examples
 
@@ -81,9 +86,18 @@ https://arxiv.org/pdf/1610.02357.pdf
 
 __cuDNN__
   
+## Model architecture  
 ![Model architecture](https://github.com/bluejurand/Photos-colorization/blob/master/model_architecture_xception.png)
 
 ## Resources
 [1] Federico Baldassarre, Diego González Morin, Lucas Rodés-Guirao, *Deep Koalarization: Image Colorization using CNNs and Inception-Resnet-v2*,
 (https://arxiv.org/abs/1712.03400)  
-[2]
+[2] Richard Zhang, Phillip Isola, Alexei A. Efros, *Colorful Image Colorization*,
+(https://arxiv.org/abs/1603.08511)  
+[3] Gustav Larsson, Michael Maire, Gregory Shakhnarovich, *Learning Representations for Automatic Colorization*,
+(https://arxiv.org/abs/1603.06668)  
+[4] Satoshi Iizuka, Edgar Simo-Serra, Hiroshi Ishikawa, *Let there be Color!: Joint End-to-end Learning of Global and Local Image Priors 
+for Automatic Image Colorization with Simultaneous Classification*,
+(https://www.researchgate.net/publication/305218105_Let_there_be_color_joint_end-to-end_learning_of_global_and_local_image_priors_for_automatic_image_colorization_with_simultaneous_classification)  
+[5] https://becominghuman.ai/auto-colorization-of-black-and-white-images-using-machine-learning-auto-encoders-technique-a213b47f7339  
+[6] https://fairyonice.github.io/Color-gray-scale-images-and-manga-using-deep-learning.html  
