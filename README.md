@@ -8,8 +8,11 @@
 ![Keras 2.3.1](https://img.shields.io/badge/keras-2.3.1-red) 
 ![Tensorflow 2.1.0](https://img.shields.io/badge/tensorflow-2.1.0-orange) 
 ![Scikit-image 0.16.2](https://img.shields.io/badge/scikit--image-0.16.2-yellowgreen)  
-Presented algorithm is able to colorize black-white photographies. Graph above shows model architecture. Code is implemented in keras API with tensorflow backend.  
-Resources which helped to establish this code are listed below, but the main one was deep colorization paper [1].  
+Presented algorithm is able to colorize black-white photographies. Graph above shows model architecture. 
+Code is implemented in keras API with tensorflow backend. Resources which helped to establish this code 
+are listed below, but the main one was deep colorization paper [1]. Main change in the structure of the
+model was the swap of feature extractor model from inception-resnet-v2 to the Xception.
+Training was done on the places dataset (http://places.csail.mit.edu/).
 The training was done on GPU unit.  
 
 ## Motivation
@@ -108,13 +111,18 @@ Model implemented on black-white photographies:
 Implementation of algorithm to the historical photo:
 ![Image21](https://github.com/bluejurand/Photos-colorization/blob/master/results/image21.jpg)  
 Couple of photographies which shows the drawbacks of the model. Colorized only part of the images,  
-leaving a large parts black and white. Mistakes in color sleection for some of the elements. 
+leaving a large parts black and white. Mistakes in color sleection for some of the elements.  
 Resulting images are very often faded:
 ![Image1](https://github.com/bluejurand/Photos-colorization/blob/master/results/image1.jpg)  
 ![Image9](https://github.com/bluejurand/Photos-colorization/blob/master/results/image9.jpg)  
 ![Image10](https://github.com/bluejurand/Photos-colorization/blob/master/results/image10.jpg)  
 ## Summary  
-
+Created model is working correctly, suprisingly well taking into acount the fact that it was trained only
+on computer with only one graphics processing unit. Analyzing image results one can conclude that model
+has tendency to leave image with faded colors. Another problem is leaving small object not colored.
+Possible solutions to that drawbacks could be to train model on computer with more powerfull GPUs,
+like Amazon EC2 p3.16xlarge. Furthermore good option could be addition of class rebalancing basing on
+probability like in [2] paper.  
 
 ## Resources
 [1] Federico Baldassarre, Diego González Morin, Lucas Rodés-Guirao, *Deep Koalarization: Image Colorization using CNNs and Inception-Resnet-v2*,
@@ -126,5 +134,6 @@ Resulting images are very often faded:
 [4] Satoshi Iizuka, Edgar Simo-Serra, Hiroshi Ishikawa, *Let there be Color!: Joint End-to-end Learning of Global and Local Image Priors 
 for Automatic Image Colorization with Simultaneous Classification*,
 (https://www.researchgate.net/publication/305218105_Let_there_be_color_joint_end-to-end_learning_of_global_and_local_image_priors_for_automatic_image_colorization_with_simultaneous_classification)  
-[5] https://becominghuman.ai/auto-colorization-of-black-and-white-images-using-machine-learning-auto-encoders-technique-a213b47f7339  
-[6] https://fairyonice.github.io/Color-gray-scale-images-and-manga-using-deep-learning.html  
+[5] Dipanjan Sarkar, Raghav Bali, Tamoghna Ghosh, *Hands-On Transfer Learning with Python: Implement advanced deep learning and neural network models using TensorFlow and Keras*
+[6] https://becominghuman.ai/auto-colorization-of-black-and-white-images-using-machine-learning-auto-encoders-technique-a213b47f7339  
+[7] https://fairyonice.github.io/Color-gray-scale-images-and-manga-using-deep-learning.html  
