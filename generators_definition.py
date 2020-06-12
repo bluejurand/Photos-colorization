@@ -5,6 +5,7 @@ from tensorflow.keras.layers import Lambda
 from tensorflow.keras import backend
 
 train_datagen = ImageDataGenerator(rescale=1. / 255, validation_split=0.2)
+train_tl_datagen = ImageDataGenerator(rescale=1. / 255, validation_split=0.2)
 
 def image_a_b_gen(generator, transfer_learning_generator, transfer_learning_model):
     for rgb_image, rgb_tl_image in zip(generator, transfer_learning_generator):
@@ -17,7 +18,7 @@ def image_a_b_gen(generator, transfer_learning_generator, transfer_learning_mode
 
         for i, sample in enumerate(luminance_tl):
             sample = gray2rgb(sample)
-            sample = sample.reshape((1, 331, 331, 3))
+            sample = sample.reshape((1, 299, 299, 3))
             embedding = transfer_learning_model.predict(sample)
             tl_model_features.append(embedding)
 
@@ -45,16 +46,16 @@ def encoder_input_generators_definition(images_path, batch_size_images):
     return train_generator, validation_generator
 
 def tl_model_input_generators_definition(images_path, batch_size_images):
-    img_transfer_learning_height = 331
-    img_transfer_learning_width = 331
+    img_transfer_learning_height = 299
+    img_transfer_learning_width = 299
 
-    train_transfer_learning_generator = train_datagen.flow_from_directory(
+    train_transfer_learning_generator = train_tl_datagen.flow_from_directory(
         images_path,
         target_size=(img_transfer_learning_height, img_transfer_learning_width),
         batch_size=batch_size_images,
         subset='training')
 
-    validation_transfer_learning_generator = train_datagen.flow_from_directory(
+    validation_transfer_learning_generator = train_tl_datagen.flow_from_directory(
         images_path,
         target_size=(img_transfer_learning_height, img_transfer_learning_width),
         batch_size=batch_size_images,

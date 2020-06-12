@@ -1,6 +1,5 @@
 ![Elvis](https://github.com/bluejurand/Photos-colorization/blob/master/results/elvis.jpg)  
 # Photos colorization
-![Build status](https://travis-ci.org/bluejurand/Titanic-python.svg?branch=master) UPDATE
 ![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg) 
 ![Python 3.6](https://img.shields.io/badge/python-3.3-blue.svg) 
 ![Spyder 4.1.3](https://img.shields.io/badge/spyder-4.1.3-black) 
@@ -77,8 +76,8 @@ __CNNs__
 
 __Transfer Learning__
 
-__NASnet__  
-https://arxiv.org/pdf/1707.07012.pdf
+__Xception__  
+https://arxiv.org/pdf/1610.02357.pdf
 
 __cuDNN__
   

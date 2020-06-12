@@ -1,11 +1,11 @@
 from tensorflow.keras.layers import Input, Conv2D, UpSampling2D, RepeatVector, Reshape
 from tensorflow.keras.models import Model
 from tensorflow.keras import backend
-from tensorflow.keras.applications.nasnet import NASNetLarge
+from tensorflow.keras.applications.xception import Xception
 from tensorflow.keras.utils import  plot_model
 
 def load_transfer_learning_model():
-    transfer_learning_model = NASNetLarge()
+    transfer_learning_model = Xception()
     for layer in transfer_learning_model.layers:
         layer.trainable = False
     return transfer_learning_model
