@@ -102,7 +102,7 @@ input spaces were used a different type of filter to transform those smaller 3D 
 goes further and instead of partitioning input data into several compressed chunks, it maps the spatial
 correlations for each output channel separately, and then performs a 1x1 depthwise convolution to capture
 cross-channel correlation. This operation is known as a depthwise separable convolution[8].  
-The output of Xception model is a 1000 feuture vector which is replicated and to the output of encoder.
+The output of Xception model is a 1000 feature vector which is replicated and added to the output of encoder.
 This operation is followed by decoder, which restores the input image size.  
 
 ![Model architecture](https://github.com/bluejurand/Photos-colorization/blob/master/model_architecture_xception.png)
