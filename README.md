@@ -9,6 +9,7 @@
 ![Tensorflow 2.1.0](https://img.shields.io/badge/tensorflow-2.1.0-orange) 
 ![Scikit-image 0.16.2](https://img.shields.io/badge/scikit--image-0.16.2-yellowgreen)  
 
+
 Presented algorithm is able to colorize black-white photographies. Graph above shows model architecture. 
 Code is implemented in keras API with tensorflow backend. Resources which helped to establish this code 
 are listed below, but the main one was deep colorization paper [1].  
