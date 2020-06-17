@@ -95,15 +95,16 @@ __cuDNN__
   
 ## Model architecture  
 Image beneth shows implemented model architecture. It is basing on encoder-decoder network mixed with
-transfer learning model, which is used as a feature extractor. In that model the transfer learning
+transfer learning model, which is used as a feature extractor. In that case the transfer learning
 model is xception. Name xception comes from extreme version of inception. When in inception 1x1 convolutions
 were used to project the original input into several separate, smaller input spaces, and from each of those
 input spaces were used a different type of filter to transform those smaller 3D blocks of data. Xception
 goes further and instead of partitioning input data into several compressed chunks, it maps the spatial
 correlations for each output channel separately, and then performs a 1x1 depthwise convolution to capture
-cross-channel correlation. This operation is known as a depthwise separable convolution. [8]
+cross-channel correlation. This operation is known as a depthwise separable convolution[8].  
 The output of Xception model is a 1000 feuture vector which is replicated and to the output of encoder.
-This operation is followed by decoder, which restores the input image size.
+This operation is followed by decoder, which restores the input image size.  
+
 ![Model architecture](https://github.com/bluejurand/Photos-colorization/blob/master/model_architecture_xception.png)
 
 ## Results
