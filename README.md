@@ -8,11 +8,12 @@
 ![Keras 2.3.1](https://img.shields.io/badge/keras-2.3.1-red) 
 ![Tensorflow 2.1.0](https://img.shields.io/badge/tensorflow-2.1.0-orange) 
 ![Scikit-image 0.16.2](https://img.shields.io/badge/scikit--image-0.16.2-yellowgreen)  
+
 Presented algorithm is able to colorize black-white photographies. Graph above shows model architecture. 
 Code is implemented in keras API with tensorflow backend. Resources which helped to establish this code 
-are listed below, but the main one was deep colorization paper [1]. Main change in the structure of the
-model was the swap of feature extractor model from inception-resnet-v2 to the Xception.
-Training was done on the places dataset (http://places.csail.mit.edu/).
+are listed below, but the main one was deep colorization paper [1].  
+Main change in the structure of the model was the swap of feature extractor model from inception-resnet-v2
+to the Xception. Training was done on the places dataset (http://places.csail.mit.edu/).
 The training was done on GPU unit.  
 
 ## Motivation
