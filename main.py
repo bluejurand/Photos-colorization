@@ -18,7 +18,7 @@ train_transfer_learning_generator, validation_transfer_learning_generator = tl_m
 model = build_complete_model(dimension_after_fusion)
 
 logs_directory = '.\\TensorboardLogs'
-callbacks = [TensorBoard(log_dir=logs_directory, histogram_freq=1, profile_batch = 100000000)]
+callbacks = [TensorBoard(log_dir=logs_directory, histogram_freq=1, profile_batch=100000000)]
 
 model.compile(optimizer='Adam', loss='mse', metrics=['accuracy'])
 history = model.fit(image_a_b_gen(train_generator, train_transfer_learning_generator, transfer_learning_model),
@@ -36,4 +36,3 @@ files = os.listdir(test_images_path)
 for idx, file in enumerate(files):
     test_org, luminance_test, cur = test_model(test_images_path, file, transfer_learning_model, model)
     create_save_images(test_org, luminance_test, cur, save_results_path, idx)
-                    
