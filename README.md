@@ -15,7 +15,7 @@ Code is implemented in keras API with tensorflow backend. Resources which helped
 are listed below, but the main one was deep colorization paper [1].  
 Main change in the structure of the model was the swap of feature extractor model from inception-resnet-v2
 to the Xception. Training was done on the places dataset (http://places.csail.mit.edu/).
-The training was done on GPU unit.  
+The network was trained and tested using GPU unit.  
 
 ## Motivation
 
