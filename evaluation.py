@@ -1,8 +1,7 @@
 import numpy as np
 from tensorflow.keras.preprocessing.image import img_to_array, load_img
 from skimage.transform import resize
-from skimage.color import rgb2lab, lab2rgb, gray2rgb
-import matplotlib.pyplot as plt
+from skimage.color import rgb2lab, gray2rgb
 
 def test_model(test_path, file, transfer_learning_model, model):
     test_org = img_to_array(load_img(test_path+file))
@@ -25,17 +24,3 @@ def test_model(test_path, file, transfer_learning_model, model):
     cur[:, :, 1:] = ab_test
     cur = resize(cur, (512, 512))
     return test_org, luminance_test, cur
-
-def create_save_images(test_org, luminance_test, cur, save_images_path, idx):
-    figure, subplot = plt.subplots(1, 3, figsize=(15, 5))
-    subplot[0].imshow(resize(test_org, (512, 512)).astype(np.uint8))
-    subplot[0].axis('off')
-    subplot[0].title.set_text('orginal')
-    subplot[1].imshow(resize(gray2rgb(luminance_test), (512, 512)).astype(np.uint8), cmap='gray')
-    subplot[1].axis('off')
-    subplot[1].title.set_text('grayscale')
-    subplot[2].imshow(lab2rgb(cur))
-    subplot[2].axis('off')
-    subplot[2].title.set_text('result')
-    figure.savefig(save_images_path+str(idx)+".jpg")
-    plt.close()

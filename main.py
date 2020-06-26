@@ -3,7 +3,8 @@ from tensorflow.keras.callbacks import TensorBoard
 import gpu_verification
 from generators_definition import image_a_b_gen, encoder_input_generators_definition, tl_model_input_generators_definition
 from model_creation import load_transfer_learning_model, build_complete_model
-from evaluation import test_model, create_save_images
+from evaluation import test_model
+from output import create_save_images
 
 gpu_verification
 
@@ -30,6 +31,7 @@ history = model.fit(image_a_b_gen(train_generator, train_transfer_learning_gener
                     steps_per_epoch=500,#round(number_of_images*0.8) // batch_size_images,
                     validation_steps=50,#round(number_of_images*0.2) // batch_size_images,
                     callbacks=callbacks)
+
 model.save('convolution_xception_fusion_places.h5')
 
 test_images_path = input("Enter the path to the folder containing test photos: ")
