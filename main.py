@@ -9,7 +9,9 @@ gpu_verification
 
 batch_size_images = 64
 dimension_after_fusion = 256
-dataset_images_path = 'D:/Datasets/data_large/'
+
+dataset_images_path = input("Enter the path to the folder containing training photos: ")
+assert os.path.exists(dataset_images_path), "I did not find the fodler at, "+str(dataset_images_path)
 number_of_images = len(os.walk(dataset_images_path + os.walk(dataset_images_path).__next__()[1][0]).__next__()[2])
 
 transfer_learning_model = load_transfer_learning_model()
@@ -30,7 +32,7 @@ history = model.fit(image_a_b_gen(train_generator, train_transfer_learning_gener
                     callbacks=callbacks)
 model.save('convolution_xception_fusion_places.h5')
 
-test_images_path = 'C:/Users/mjur1/Documents/Projekty_DS/photos_colorization/test_data/'
+test_images_path = input("Enter the path to the folder containing test photos: ")
 save_results_path = './results/image'
 files = os.listdir(test_images_path)
 
