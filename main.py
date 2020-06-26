@@ -35,6 +35,7 @@ history = model.fit(image_a_b_gen(train_generator, train_transfer_learning_gener
 model.save('convolution_xception_fusion_places.h5')
 
 test_images_path = input("Enter the path to the folder containing test photos: ")
+assert os.path.exists(test_images_path), "I did not find the fodler at, "+str(test_images_path)
 save_results_path = './results/image'
 files = os.listdir(test_images_path)
 
