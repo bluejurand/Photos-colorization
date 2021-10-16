@@ -6,7 +6,7 @@
 ![Numpy 1.12.1](https://img.shields.io/badge/numpy-1.12.1-yellow.svg) 
 ![Matplotlib 2.1.2](https://img.shields.io/badge/matplotlib-2.1.2-blue.svg) 
 ![Keras 2.3.1](https://img.shields.io/badge/keras-2.3.1-red) 
-![Tensorflow 2.1.0](https://img.shields.io/badge/tensorflow-2.1.0-orange) 
+![Tensorflow 2.5.1](https://img.shields.io/badge/tensorflow-2.5.1-orange) 
 ![Scikit-image 0.16.2](https://img.shields.io/badge/scikit--image-0.16.2-yellowgreen)  
 
 
